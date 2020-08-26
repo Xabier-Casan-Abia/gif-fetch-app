@@ -1,4 +1,4 @@
-An app using React hooks to fetch gifs from Giphy and show them on the page.
+An app using React hooks to fetch gifs from giphy.com and show them on the page.
 
 ## `npm i`
 
@@ -18,4 +18,4 @@ Builds the app for production to the `build` folder.<br />
 
 ## `cd build` && `http-server -o`
 
-Runs the built app in a zero-configuration command-line http server.
+Runs the built app in a zero-configuration command-line http server.git.
