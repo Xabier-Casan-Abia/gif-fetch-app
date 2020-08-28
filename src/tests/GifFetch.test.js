@@ -1,12 +1,12 @@
 import React from 'react'
 import '@testing-library/jest-dom';
-import { GifExpertApp } from "../GifExpertApp";
+import { GifFetchApp } from "../GifFetchApp";
 const { shallow } = require("enzyme")
 
-describe('Tests in <GifExpertApp />', () => {
+describe('Tests in <GifFetchApp />', () => {
     
     const categories = ["Rupaul","Drag Queen "]
-    const wrapper = shallow( <GifExpertApp categories= { categories }/>);
+    const wrapper = shallow( <GifFetchApp categories= { categories }/>);
 
     test('should show the component correctly', () => {  
         expect(wrapper).toMatchSnapshot();

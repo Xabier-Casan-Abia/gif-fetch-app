@@ -3,13 +3,13 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 import PropTypes from 'prop-types';
 
-export const GifExpertApp = ( {defaultCategories = ["Rupaul", "Miss Vanjie"]} ) => {
+export const GifFetchApp = ( {defaultCategories = ["Rupaul", "Miss Vanjie"]} ) => {
 
     const [categories, setCategories] = useState(defaultCategories);
 
     return (
         <>
-            <h2>GifExpertApp</h2>
+            <h2>GifFetchApp</h2>
             < AddCategory setCategories={setCategories}/>
             <hr/>
 
@@ -23,6 +23,6 @@ export const GifExpertApp = ( {defaultCategories = ["Rupaul", "Miss Vanjie"]} ) 
     )
 }
 
-GifExpertApp.propTypes = {
+GifFetchApp.propTypes = {
     categories: PropTypes.array
 }
