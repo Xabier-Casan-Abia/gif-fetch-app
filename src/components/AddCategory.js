@@ -4,9 +4,10 @@ import Proptypes from "prop-types";
 export const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (e) => setInputValue(e.target.value);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCategories(ctgs => [inputValue, ...ctgs]);
+    inputValue.trim().length > 0 && setCategories(ctgs => [inputValue, ...ctgs]);
     setInputValue("")
   };
 

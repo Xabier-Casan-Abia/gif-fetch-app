@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GifGrid /> should show items after loading them with useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Rupaul
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id={123}
+      key="123"
+      title="Rupaul"
+      url="https://localhost"
+    />
+    <GifGridItem
+      id={345}
+      key="345"
+      title="Drag Queen"
+      url="https://localhost"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Tests in <GifGrid /> should show the component correctly 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Rupaul
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;

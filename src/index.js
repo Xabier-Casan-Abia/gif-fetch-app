@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'animate.css';
-import GiffExpertApp from './GiffExpertApp';
+import { GifExpertApp } from './GifExpertApp';
 
 ReactDOM.render(
-  <GiffExpertApp/>,
+  <GifExpertApp/>,
   document.getElementById('root')
 );
